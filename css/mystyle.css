@@ -1,0 +1,109 @@
+.image-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+section {
+    padding: 150px 0;
+}
+
+.section-heading {
+    margin: 30px 0;
+    font-size: 4em;
+}
+
+.section-lead {
+    margin: 30px 0;
+}
+
+.section-paragraph {
+    margin: 30px 0;
+}
+
+@media (max-width: 880px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .close-notify {
+        padding: 0;
+        margin: 0;
+        min-width:0;
+    }
+
+    .navbar-brand {
+        padding: 0;
+        min-width: 70px;
+        vertical-align: bottom;
+    }
+
+    .navbar {
+        padding: 0 !important;
+    }
+
+    .affix {
+        position: relative !important;
+    }
+
+    .section-heading {
+        font-size: 2em;
+    }
+
+    .text-center {
+        font-size: 1em;
+    }
+}
+
+footer {
+    background-color: #000000;
+    font-color: #FFFFFF;
+    padding: 20px;
+    text-align: right;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.navbar {
+    padding-bottom: 20px;
+    margin: 0;
+    border-radius: 0;
+}
+
+a {
+
+    margin: 0 4px;
+    border-radius: 4px;
+    padding: 4px 15px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.close-notify {
+    position: absolute;
+    margin-top: 5px;
+    right: 10px;
+    z-index: 1000;
+    float: right;
+}
+
+ul li {
+    margin-top: 10px;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
