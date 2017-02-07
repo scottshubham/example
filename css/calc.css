@@ -1,0 +1,26 @@
+#numberTabs {
+    width:500px;
+    padding: 10px;
+}
+#numberTabs label{
+    width: 100%;
+    font-size: large;
+}
+#numberTabs input[type=number] {
+    width: 100%;
+}
+#numberTabs input[type=number]:focus {
+    border-color: #4CAF50;
+}
+#operators input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#mainBody {
+    width:550px;
+}
