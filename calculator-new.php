@@ -23,8 +23,25 @@
             x = "";
             document.getElementById('entry').innerHTML=x;
         }
-        function evaluate() {
+        function evaluateSolution() {
+            var size= x.length;
+            var i=0;
+            var j=0;
+            var arri=0;
+            var oppi=0;
+            var arr=[];
+            var opp=[];
+            var ans=0;
+            while(i<size) {
+                if(x.charCodeAt(i)<48 && x.charCodeAt(i)!=46) {
+                    len=i-j;
+                    arr.push(x.substr(j,len));
+                    j=i+1;
+                }
 
+                i+=1;
+            }
+            alert(arr[0]+arr[1]);
         }
     </script>
 </head>
@@ -33,7 +50,8 @@
     <form method="get" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <div class="container">
             <div>
-                <div class="solutionArea"><?php echo("$ans") ?></div>
+                <div id="solution" class="solutionArea">
+                </div>
             </div>
             <div>
                 <div id="entry" class="entryArea" >
@@ -53,10 +71,9 @@
             <input class="custom-number" type="button" value="*" name="multiply" onclick="myFunction(multiply.value)">
             <input class="custom-number" type="button" value="/" name="divide" onclick="myFunction(divide.value)">
             <input class="custom-number" type="button" value="%" name="mod" onclick="myFunction(mod.value)">
-            <input class="custom-number" type="button" value="=" name="equal" onclick="evaluate()">
+            <input class="custom-number" type="button" value="=" name="equal" onclick="evaluateSolution()">
         </div>
     </form>
 </div>
 </body>
 </html>
-
